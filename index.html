@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ให้คะแนนความรู้สึก</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="vote-panel">
+      <h1>ให้คะแนนความพอใจ</h1>
+      <div class="button-group">
+        <button onclick="vote(0)">แย่</button>
+        <button onclick="vote(1)">พอใช้</button>
+        <button onclick="vote(2)">ดี</button>
+        <button onclick="vote(3)">ดีมาก</button>
+        <button onclick="vote(4)">ใครจะเทียบ</button>
+      </div>
+      <div class="results" id="results"></div>
+      <div class="admin-controls">
+        <button onclick="exportToCSV()">📥 ดาวน์โหลดผลโหวต (CSV)</button>
+        <button onclick="resetVotes()">🧹 ล้างผลโหวต (แอดมิน)</button>
+      </div>
+      <div class="visit-count">
+        จำนวนการเยี่ยมชม/กดถูกใจ: <span id="clickCount">0</span> ครั้ง
+        <button onclick="incrementClick()">❤️ กดถูกใจ</button>
+      </div>
+    </div>
+
+    <div class="info-panel">
+      <div class="description">
+        <p>นี่คือเว็บแอพที่เราทำการพัฒนามา</p>
+        <a href="https://example.com" target="_blank" onclick="incrementClick()">
+          <img src="https://imgur.com/a/a9gvV5h" alt="หน้าเว็บของเรากดตรงนี้สิ" class="https://budgetbuddy-035u.onrender.com/"
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
